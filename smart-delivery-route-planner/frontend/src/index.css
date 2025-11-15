@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+/* choose one of the following */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "flowbite/src/themes/default";
+
+/* MINIMAL THEME
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "flowbite/src/themes/minimal";
+*/
+
+/* ENTERPRISE THEME
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "flowbite/src/themes/enterprise";
+*/
+
+/* PLAYFUL THEME
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+@import "flowbite/src/themes/playful";
+*/
+
+/* MONO THEME
+@import "flowbite/src/themes/mono";
+*/
+
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+
+/* App-level tweaks */
+:root{
+  --brand-500: #4f46e5;   /* indigo */
+  --brand-600: #4338ca;
+  --accent-500: #06b6d4;  /* teal/cyan */
+  --muted-600: #6b7280;   /* slate-500 */
+}
+
+html,body,#root {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #fbfdff 0%, #f7f9fc 100%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* subtle card shadow */
+.card {
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+/* small utility for dim text */
+.text-muted { color: #6b7280; }

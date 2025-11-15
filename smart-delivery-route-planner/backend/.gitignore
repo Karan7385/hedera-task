@@ -1,0 +1,18 @@
+# Virtual Environment
+venv/
+# or generally for any virtual environment folder name
+.venv/
+
+# Bytecode files
+*.pyc
+
+# Python cache directories wherever they occur (best practice)
+**/__pycache__
+
+# Testing and Coverage
+.pytest_cache/
+.coverage
+
+# Editor/OS temporary files (common additions)
+.DS_Store
+*.swp
